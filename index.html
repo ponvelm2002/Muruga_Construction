@@ -135,7 +135,7 @@
 
   /* Contact form */
   form {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     background: #fff;
     padding: 20px;
@@ -149,7 +149,10 @@
   }
 
   input[type="text"], input[type="email"], textarea {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
     padding: 12px;
     margin: 8px 0;
     border-radius: 4px;
@@ -179,6 +182,7 @@
   }
 
   footer {
+    display: flex;
     background-color: #2e7d32;
     color: #fff;
     text-align: center;
@@ -263,14 +267,17 @@
       width: 90%;
       height: auto;
     }
-
-    form {
-      width: 90%;
+    .totelbody{
+      border: solid 1px;
+      height: 100vh;
     }
+  
 
   }
 </style>
 </head>
+<div class="totelbody">
+<div class="main_body">
 <body>
 
 <header>
@@ -383,9 +390,7 @@
   </form>
 </div>
 
-<footer>
-  <p>&copy; 2025 Muruga Construction Company. All rights reserved.</p>
-</footer>
+
 
 <script>
   function showSection(id) {
@@ -408,4 +413,11 @@
 </script>
 
 </body>
+</div>
+<div class="footer">
+<footer>
+  <p>&copy; 2025 Muruga Construction Company. All rights reserved.</p>
+</footer>
+</div>
+</div>
 </html>

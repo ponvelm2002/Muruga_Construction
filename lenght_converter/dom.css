@@ -1,0 +1,44 @@
+  
+ body{
+     border: 1px solid;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(229, 240, 105);
+
+ }
+ #wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 1px;
+    border-color: rgb(41, 11, 160);
+    width: 50%;
+    height: 60%;
+    background-color: black;
+    border-radius: 10px;
+     }
+ .inputdiv{
+    margin: 15px;
+ }
+ .inputdiv input{
+    width: 200px;
+    height: 30px;
+ }
+ h2{
+    margin-top: 40px;
+    color: aliceblue;
+ }
+ #wrapper button{
+        width: 150px;
+        height: 30px;
+        background-color: rgb(224, 229, 168);
+        border: 0.8px;
+ }
+ #result{
+    color: aliceblue;
+    margin: 20px;
+ }
+
+ 
