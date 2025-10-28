@@ -6,10 +6,108 @@
     <title>Document</title>
 </head>
 <body>
+    
     <h1 id="message"></h1>
     <script>
-        let message= document.getElementById("message")
-        message.innerHTML="welcome to our website"
+        /*let message= document.getElementById("message")
+        message.innerHTML="welcome to our website"*/
+        let matrix=[[3,4,5,6],[9,44,5,0],[2,3,92]]
+        console.log(matrix[1][3])
+        console.log(matrix)
+
+        //array methods
+        let array=['a','b','c','d','e']
+        array.push('f')
+        array.push('f')
+        console.log(array)
+//pop is used to remove the last element in the array        
+        array.pop()
+        console.log(array)
+
+//shift is used to remove the first letter of the array        
+        console.log(array.shift())
+        console.log(array)
+
+//unshift is used to add elemt to the start of the array   
+        console.log(array.unshift('a'))
+        console.log(array)
+
+//delite(this is not uppropriat it dous not shift the value , 
+// it just remove the value and show emty in that removed space)
+        //delete array[2]
+        //console.log(array[2])    
+        
+//splice this very usefull the remove the set of element from where to how much  ,
+//we can also replace the element by using splice   
+// and also we can only add the element not to remove 
+
+//rules for splice function
+//1. 1st perameter  - starting index
+//2. 2nd perameter - no. element to be deleted from starting index
+//3. 3rd(or more) paremeter -values to be inserted from the stating index
+        array.splice(2,2)
+        console.log(array)
+
+        array.splice(1,1,'m')
+        console.log(array)
+        array.splice(1,2,'x','y')
+        console.log(array)
+        array.pop()
+        console.log(array)
+        array.splice(1,0,'l')
+        console.log(array)
+
+
+//slice(staring index, ending index)
+//ending index not included
+
+        console.log(array.slice(1,3));
+
+//reverse
+
+        console.log(array.reverse());
+
+//join - converts array to string
+    
+        let str=array.join();
+        console.log(str);
+
+//splice - converts string to array
+        let str3="g-t-r-e"    ;    
+        let arr=str3.split('-');
+        console.log(arr);
+
+//convert and spread operator
+        let firstarr=[1,2,3];
+        let secondarr=[4,5,6];
+
+        let join =[firstarr,secondarr]
+        console.log(join)
+
+        joinarr=firstarr.concat(secondarr)
+        console.log(joinarr)
+//spread operator
+        joinarr1=[...firstarr,...secondarr]
+        console.log(joinarr1)
+
+//exercise:
+        
+        arr=[5,8,10,7,9,11]
+        //replacing 
+        console.log(arr)
+        arr.splice(3,5,17,9,11)
+        console.log(arr)
+
+        arr.unshift(100)
+        console.log(arr)
+
+        arr.push(1000)
+        console.log(arr)
+
+        console.log(arr.length)
+        arr.splice(4,0,0)  
+        console.log(arr)  
+        
     </script>
 </body>
 </html>

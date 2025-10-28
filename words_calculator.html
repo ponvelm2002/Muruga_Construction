@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(236, 193, 129);
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            width: 30%;
+            height: 60%;
+            padding: 10px;
+            color: aliceblue;
+            background-color: black;
+            
+
+        }
+        #words{
+            height: 250px;
+            width: 300px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        button{
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Word calculator</h2>
+        <div class="=inputdiv">
+            <textarea name="text" id="words" ></textarea>
+        </div>
+        <div>
+            <button type="submit" onclick="calword()">Calculate words</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function calword(){
+            let out=String(document.getElementById("words").value);
+            let splval=out.split(" ");
+            let lenval=splval.length;
+            let result=document.getElementById("result")
+            result.innerHTML=lenval
+
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
