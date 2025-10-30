@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+     border: 1px solid;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(229, 240, 105);
+
+ }
+ #wrapper1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 1px;
+    border-color: rgb(41, 11, 160);
+    width: 50%;
+    height: 60%;
+    background-color: black;
+    border-radius: 10px;
+     }
+      .inputdiv{
+    margin: 15px;
+ }
+ .inputdiv input{
+    width: 200px;
+    height: 30px;
+ }
+ h2{
+    margin-top: 40px;
+    color: aliceblue;
+ }
+ #wrapper1 button{
+        width: 150px;
+        height: 30px;
+        background-color: rgb(224, 229, 168);
+        border: 0.8px;
+        border-radius: 5px;
+ }
+ #result{
+    color: aliceblue;
+    margin: 20px;
+ }
+       
+    </style>
+</head>
+<body>
+    <div  id="wrapper1">
+        <h2>Palindrome Checker</h2>
+        <div class="inputdiv">
+            <input type="text" id="Celcius" placeholder="Enter sentence">
+        </div>
+        <div>
+            <button type="submit" onclick="Calculate()">Check</button>
+        </div>
+        <div id="result">
+
+        </div>
+        <script>
+            function Calculate(){
+            const palin=String(document.getElementById("Celcius").value)
+            let word=""
+            // const farVal=(celVal*9/5)+32
+            // const result=document.getElementById("result")
+            // result.innerHTML=farVal + " F"
+            // const clear=palin.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+            // const reve=clear.split('').reverse().join('');
+            // if(palin === reve){
+            //     word= "palindrom"
+            // }self
+            // {
+            //     word= "not panindrom"
+            // }
+            // const result=document.querySelector("#result")
+            // result.innerHTML="the given word is:"+ word 
+            
+            //let reve=clear.split('').reverse().join('');
+            if(ispalindrome(palin)) {
+                word="it is palindrom"
+            }else{
+                word="not palindrom"
+            }
+            const result=document.querySelector("#result");
+            result.innerHTML="the given word is:"+ word ;
+            
+            
+            }  
+        </script>
+    </div>
+
+ 
+</body>
+</html>

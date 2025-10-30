@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(14, 127, 89);
+        }
+        #wreaper{
+            text-align: center;
+            border: solid 1px;
+            height: 50%;
+            width: 40%;
+            color: aliceblue;
+            background-color: rgb(3, 0, 0); 
+        }
+        h2{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        button{
+            margin: 20px;
+            background-color: rgb(162, 172, 51);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wreaper">
+        <h2>FD rate Calculate</h2>
+        <div>
+            <input type="number" id="FD">
+        </div>
+        <div class="button">
+            <button type="submit" onclick="fdrate()">Calculate</button>
+        </div>
+        <div id="result">
+
+        </div>
+
+    </div>
+    <script>
+        function fdrate(){
+        let month=Number(document.getElementById("FD").value)
+        let rate=0
+        if(month<3)
+            rate = 5.8
+        
+        else if(month=>3 && month<=r)
+            rate=6.5
+        
+        else if(month>=7 && month<=9)
+            rate=6.8
+        
+        else 
+            rate=7
+        
+        console.log(month)
+       let result=document.querySelector('#result') 
+       result.innerHTML="yoor rate is :"+rate+" %"
+
+        }
+       
+
+        
+    </script>
+    
+</body>
+</html>
